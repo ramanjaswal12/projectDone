@@ -4,7 +4,7 @@ module.exports.connectMongoDB = async () => {
     const connectionUrl = Config.get("Database").URL;
 
     const mongoConfig = {
-        autoIndex: false,                   // Disable auto-indexing for better performance
+        autoIndex: false,                   // Disable auto-indexing for better performance   
         minPoolSize: 5,                    // Minimum number of connections in the pool
         maxPoolSize: 50,                  // Maximum number of connections in the pool
         serverSelectionTimeoutMS: 5000,  // Shorter timeout to fail fast if DB is unreachable
